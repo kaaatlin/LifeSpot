@@ -3,8 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <title>LifeSpot</title>
+    <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        .header-text {
+            border: 2px solid black;
+            background-color: azure;
+            padding: 10px;
+        }
+    </style>
 </head>
+
+<header>
+    <div class="header-text">
+        <h1>LifeSpot — прямые трансляции с улиц</h1>
+        <p>Покажем, что происходит прямо сейчас</p>
+
+    </div>
+</header>
+
+<aside id="sidebar">
+    <div class="navbar">
+        <a href="/"><p>Все трансляции</p></a>
+        <a href="/"><p>О проекте</p></a>
+    </div>
+</aside>
+
 <body>
-    <p>Приветствуем на LifeSpot!</p>
+    <div class="input-city">
+        <label for="city">Поиск по названию города</label>
+        <input name="city" type="text" />
+    </div>
+    <div class="video-container">
+        <!--Нью-Йорк-->
+        <iframe width="500" height="300" src="https://www.youtube.com/live/1-iS7LArMPA?feature=share" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3 class="video-title">Нью-Йорк, Тайм Сквер</h3>
+    </div>
+
+    <div class="video-container">
+        <!--Санкт-Петербург-->
+        <iframe width="500" height="300" src="https://www.youtube.com/live/rG13FY2ytno?feature=share" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3 class="video-title">Санкт-Петербург, Невский Проспект</h3>
+    </div>
+
+    <div class="video-container">
+        <!--Лондон-->
+        <iframe width="500" height="300" src="https://www.youtube.com/live/V00D4K9OshI?feature=share" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3 class="video-title">Лондон, автобусный маршрут</h3>
+    </div>
 </body>
+
+<footer>
+    <p>LifeSpot - все права защищены</p>
+    <p>Связаться с нами: contact@lifespot.ru</p>
+</footer>
+
 </html>
