@@ -12,27 +12,38 @@
             padding: 10px;
         }
     </style>
+    <script src="../Static/JS/index.js"></script>
+    <script>
+        // Проверка на возраст
+        checkAge();
+
+        // сохранение сессии
+        handleSession()
+
+        // вывод данных сессии в консоль
+        sessionLog();
+        const inputParseFunction = function () {
+            return document.getElementsByTagName('input')[0].value.toLowerCase();
+        }
+
+        setTimeout(() => alert("Нравится LifeSpot? " + '\n' + "Подпишитесь на наш Instagram @lifespot999!"), 3000);
+
+    </script>
 </head>
 
 <header>
     <div class="header-text">
         <h1>LifeSpot — прямые трансляции с улиц</h1>
         <p>Покажем, что происходит прямо сейчас</p>
-
     </div>
 </header>
 
-<aside id="sidebar">
-    <div class="navbar">
-        <a href="/"><p>Все трансляции</p></a>
-        <a href="/"><p>О проекте</p></a>
-    </div>
-</aside>
+<!--SIDEBAR-->
 
 <body>
     <div class="input-city">
         <label for="city">Поиск по названию города</label>
-        <input name="city" type="text" />
+        <input name="city" type="text" oninput="filterContent()" />
     </div>
     <div class="video-container">
         <!--Нью-Йорк-->
@@ -53,9 +64,7 @@
     </div>
 </body>
 
-<footer>
-    <p>LifeSpot - все права защищены</p>
-    <p>Связаться с нами: contact@lifespot.ru</p>
-</footer>
+<!--FOOTER-->
 
 </html>
+
